@@ -147,8 +147,8 @@ export default function Home() {
             <div>
               <h4 className="font-bold mb-4">Правовая информация</h4>
               <ul className="space-y-2 text-gray-600 dark:text-gray-400">
-                <li><a href="#" className="hover:opacity-60">Политика конфиденциальности</a></li>
-                <li><a href="#" className="hover:opacity-60">Условия использования</a></li>
+                <li><a href="/privacy" className="hover:opacity-60">Политика конфиденциальности</a></li>
+                <li><a href="/terms" className="hover:opacity-60">Пользовательское соглашение</a></li>
               </ul>
             </div>
             <div>
