@@ -8,7 +8,7 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-bold text-black dark:text-white mb-4">1. Общие условия</h2>
             <p>
-              Пользуясь сайтом https://airent24.ru и услугами компании airent24 (далее – «Услуги»), вы соглашаетесь с условиями настоящего Соглашения. Если вы не согласны с этими условиями, пожалуйста, не используйте наши Услуги.
+              Сайт airent24 и услуги предоставляет ИП Албу В. Г. Используя сайт https://airent24.ru, вы принимаете настоящее Соглашение.
             </p>
           </section>
 
@@ -86,7 +86,7 @@ export default function Terms() {
 
           <section className="border-t border-gray-200 dark:border-gray-800 pt-6">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Последнее обновление: {new Date().toLocaleDateString('ru-RU')}
+              Последнее обновление: 19 августа 2026 г.
             </p>
           </section>
         </div>

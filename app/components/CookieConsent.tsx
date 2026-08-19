@@ -8,7 +8,8 @@ export default function CookieConsent() {
   useEffect(() => {
     const consent = localStorage.getItem('cookieConsent');
     if (!consent) {
-      setShow(true);
+      const frame = requestAnimationFrame(() => setShow(true));
+      return () => cancelAnimationFrame(frame);
     }
   }, []);
 
