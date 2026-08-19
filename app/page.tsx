@@ -52,11 +52,11 @@ export default function Home() {
       <section className="process section"><span className="kicker">Как мы работаем</span><div className="process-line">{["Аудит задачи", "Архитектура", "Пилот", "Интеграция", "Сопровождение"].map((item, i) => <div key={item}><span>{i + 1}</span><p>{item}</p></div>)}</div></section>
 
       <section className="request" id="request">
-        <div className="request-copy"><span className="kicker">Начать проект</span><h2>Расскажите<br />о вашей задаче</h2><p>Вернёмся с предварительной архитектурой и предложим оптимальный вариант размещения.</p><div className="contact-card" id="contact"><span>Оператор и исполнитель</span><strong>ИП Албу В. Г.</strong><a href="mailto:privacy@airent24.ru">privacy@airent24.ru</a><small>Россия</small></div></div>
+        <div className="request-copy"><span className="kicker">Начать проект</span><h2>Расскажите<br />о вашей задаче</h2><p>Вернёмся с предварительной архитектурой и предложим оптимальный вариант размещения.</p><div className="contact-card" id="contact"><span>Оператор и исполнитель</span><strong>ИП Албу Валентин Георгиевич</strong><small>ИНН 890400136608</small><small>ОГРНИП 305890404100029</small><small>ЯНАО, г. Новый Уренгой</small><a href="mailto:privacy@airent24.ru">privacy@airent24.ru</a></div></div>
         <LeadForm />
       </section>
 
-      <footer><a className="logo" href="#top">airent<span>24</span></a><p>GPU-инфраструктура и внедрение ИИ в России</p><div><a href="/privacy">Политика конфиденциальности</a><a href="/terms">Условия использования</a></div><small>© 2026 ИП Албу В. Г.</small></footer>
+      <footer><a className="logo" href="#top">airent<span>24</span></a><p>GPU-инфраструктура и внедрение ИИ в России</p><div><a href="/privacy">Политика конфиденциальности</a><a href="/terms">Условия использования</a></div><small>© 2026 ИП Албу В. Г.<br />ИНН 890400136608</small></footer>
     </main>
   );
 }

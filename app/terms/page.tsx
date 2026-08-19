@@ -8,7 +8,7 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-bold text-black dark:text-white mb-4">1. Общие условия</h2>
             <p>
-              Сайт airent24 и услуги предоставляет ИП Албу В. Г. Используя сайт https://airent24.ru, вы принимаете настоящее Соглашение.
+              Сайт airent24 и услуги предоставляет ИП Албу Валентин Георгиевич, ИНН 890400136608, ОГРНИП 305890404100029. Используя сайт https://airent24.ru, вы принимаете настоящее Соглашение.
             </p>
           </section>
 
