@@ -3,12 +3,14 @@
 import { useState, useEffect } from 'react';
 
 export default function CookieConsent() {
-  const [show, setShow] = useState(false);
+  // Баннер рендерится на сервере, чтобы уведомление было доступно
+  // пользователям и автоматическим проверкам без выполнения JavaScript.
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     const consent = localStorage.getItem('cookieConsent');
-    if (!consent) {
-      const frame = requestAnimationFrame(() => setShow(true));
+    if (consent) {
+      const frame = requestAnimationFrame(() => setShow(false));
       return () => cancelAnimationFrame(frame);
     }
   }, []);
@@ -30,9 +32,9 @@ export default function CookieConsent() {
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div className="flex-1">
           <p className="text-sm">
-            Мы используем cookies для улучшения пользовательского опыта. Продолжая использовать сайт, вы соглашаетесь с использованием cookies в соответствии с нашей{' '}
-            <a href="/privacy" className="text-blue-400 hover:underline">
-              Политикой конфиденциальности
+            Сайт использует технические данные браузера и локальное хранилище для сохранения вашего выбора. Необязательные cookies применяются только с вашего согласия. Подробнее в{' '}
+            <a href="/cookies" className="text-blue-400 hover:underline">
+              Политике использования cookies
             </a>
             .
           </p>

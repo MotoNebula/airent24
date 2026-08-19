@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-black dark:text-white mb-4">6. Использование cookies</h2>
             <p>
-              Необязательные cookies используются только после согласия пользователя. Вы можете отказаться от них в уведомлении или удалить в настройках браузера.
+              Необязательные cookies используются только после согласия пользователя. Вы можете отказаться от них в уведомлении или удалить в настройках браузера. Подробная информация приведена в <a href="/cookies" className="text-blue-600 hover:underline">Политике использования cookies</a>.
             </p>
           </section>
 

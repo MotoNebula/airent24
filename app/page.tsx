@@ -56,7 +56,7 @@ export default function Home() {
         <LeadForm />
       </section>
 
-      <footer><a className="logo" href="#top">airent<span>24</span></a><p>GPU-инфраструктура и внедрение ИИ в России</p><div><a href="/privacy">Политика конфиденциальности</a><a href="/terms">Условия использования</a></div><small>© 2026 ИП Албу В. Г.<br />ИНН 890400136608</small></footer>
+      <footer><a className="logo" href="#top">airent<span>24</span></a><p>GPU-инфраструктура и внедрение ИИ в России</p><div><a href="/privacy">Политика конфиденциальности</a><a href="/cookies">Политика cookies</a><a href="/terms">Условия использования</a></div><small>© 2026 ИП Албу В. Г.<br />ИНН 890400136608</small></footer>
     </main>
   );
 }
