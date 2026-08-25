@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import CookieConsent from "./components/CookieConsent";
+import ParallaxEffects from "./components/ParallaxEffects";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://airent24.ru"),
@@ -38,6 +39,7 @@ export default function RootLayout({
           founder: { "@type": "Person", name: "Албу Валентин Георгиевич" },
         }).replace(/</g, "\\u003c") }} />
         {children}
+        <ParallaxEffects />
         <CookieConsent />
       </body>
     </html>
