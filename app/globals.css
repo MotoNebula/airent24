@@ -31,7 +31,7 @@ h1{position:relative;font-size:clamp(54px,7vw,104px);line-height:.92;letter-spac
 footer{padding:55px clamp(24px,7vw,112px);border-top:1px solid #ffffff20;display:grid;grid-template-columns:1fr 1fr 1.4fr auto;gap:30px;align-items:center;color:#78867d;font-size:12px;background:#050c09}footer>div{display:flex;gap:18px}footer a:hover{color:white}
 .reveal{animation:reveal .9s both}.delay-1{animation-delay:.18s}
 .hero-panel[data-parallax]{animation:panelReveal .9s .16s both;transform:translate3d(0,var(--parallax-y,0),0) perspective(1200px) rotateX(var(--tilt-y)) rotateY(var(--tilt-x));transform-style:preserve-3d;will-change:transform;transition:transform .12s linear}
-.motion-reveal{opacity:0;transform:translateY(48px);transition:opacity .8s ease,transform .9s cubic-bezier(.2,.7,.2,1)}.motion-reveal.is-visible{opacity:1;transform:none}
+.motion-reveal{opacity:1;transform:none}.effects-ready .motion-reveal{opacity:0;transform:translateY(48px);transition:opacity .8s ease,transform .9s cubic-bezier(.2,.7,.2,1)}.effects-ready .motion-reveal.is-visible{opacity:1;transform:none}
 .cursor-aura{position:fixed;z-index:44;left:var(--pointer-x);top:var(--pointer-y);width:8px;height:8px;border:1px solid #b8ff4f60;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;box-shadow:0 0 28px #b8ff4f55}
 @keyframes reveal{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}@keyframes float{50%{transform:translateY(-10px)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes drift{to{transform:translate(70px,50px)}}@keyframes pulse{50%{box-shadow:0 0 0 11px #b8ff4f00}}
 @keyframes panelReveal{from{opacity:0}to{opacity:1}}

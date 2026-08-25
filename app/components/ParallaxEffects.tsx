@@ -6,6 +6,7 @@ export default function ParallaxEffects() {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const root = document.documentElement;
+    root.classList.add("effects-ready");
     const layers = Array.from(document.querySelectorAll<HTMLElement>("[data-parallax]"));
     const reveals = Array.from(document.querySelectorAll<HTMLElement>(".motion-reveal"));
     let frame = 0;
@@ -22,7 +23,7 @@ export default function ParallaxEffects() {
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("pointermove", onPointerMove, { passive: true });
     render();
-    return () => { window.removeEventListener("scroll", onScroll); window.removeEventListener("pointermove", onPointerMove); observer.disconnect(); if (frame) cancelAnimationFrame(frame); };
+    return () => { root.classList.remove("effects-ready"); window.removeEventListener("scroll", onScroll); window.removeEventListener("pointermove", onPointerMove); observer.disconnect(); if (frame) cancelAnimationFrame(frame); };
   }, []);
   return <div className="cursor-aura" aria-hidden="true" />;
 }

@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main>
       <a className="skip-link" href="#content">Перейти к содержанию</a>
-      <nav className="nav" aria-label="Основная навигация"><a className="logo" href="#top" aria-label="airent24 — на главную">airent<span>24</span></a><div className="nav-links"><a href="#solutions">Решения</a><a href="#placement">Размещение</a><a href="#approach">Подход</a><a href="#contact">Контакты</a></div><a className="nav-cta" href="#request">Обсудить проект</a></nav>
+      <nav className="nav" aria-label="Основная навигация"><a className="logo" href="#top" aria-label="airent24 — на главную">airent<span>24</span></a><div className="nav-links"><a href="#solutions">Решения</a><a href="#placement">Размещение</a><a href="#approach">Принципы</a><a href="#contact">Контакты</a></div><a className="nav-cta" href="#request">Обсудить проект</a></nav>
 
       <section className="hero" id="top">
         <div className="hero-grid" data-parallax="0.08" aria-hidden="true" />
