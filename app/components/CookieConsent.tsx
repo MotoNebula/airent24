@@ -28,27 +28,27 @@ export default function CookieConsent() {
   if (!show) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-black dark:bg-gray-900 text-white p-4 shadow-lg z-40">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div className="flex-1">
-          <p className="text-sm">
+    <div className="cookie-consent" role="dialog" aria-label="Настройки cookies" aria-live="polite">
+      <div className="cookie-inner">
+        <div>
+          <p>
             Сайт использует технические данные браузера и локальное хранилище для сохранения вашего выбора. Необязательные cookies применяются только с вашего согласия. Подробнее в{' '}
-            <a href="/cookies" className="text-blue-400 hover:underline">
+            <a href="/cookies">
               Политике использования cookies
             </a>
             .
           </p>
         </div>
-        <div className="flex gap-3 shrink-0">
+        <div className="cookie-actions">
           <button
             onClick={handleDecline}
-            className="px-4 py-2 text-sm border border-gray-600 rounded hover:border-gray-400 transition"
+            className="cookie-decline"
           >
             Отклонить
           </button>
           <button
             onClick={handleAccept}
-            className="px-4 py-2 text-sm bg-white text-black rounded hover:bg-gray-200 transition font-semibold"
+            className="cookie-accept"
           >
             Принять
           </button>
